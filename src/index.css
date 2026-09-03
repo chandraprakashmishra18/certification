@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0A0A0B;
+  --color-surface-dim: #0A0A0B;
+  --color-surface-bright: #222225;
+  --color-surface-variant: #1C1C1F;
+  --color-surface-container-lowest: #0A0A0B;
+  --color-surface-container-low: #111113;
+  --color-surface-container: #161619;
+  --color-surface-container-high: #1E1E22;
+  --color-surface-container-highest: #28282D;
+  --color-background: #0A0A0B;
+
+  --color-primary: #FFFFFF;
+  --color-primary-container: #E0E0E0;
+  --color-primary-fixed: #FFFFFF;
+  --color-primary-fixed-dim: #D4D4D8;
+  --color-on-primary: #0A0A0B;
+  --color-on-primary-container: #0A0A0B;
+
+  --color-secondary: #30D158;
+  --color-secondary-container: #142E1F;
+  --color-secondary-fixed: #86EFAC;
+  --color-secondary-fixed-dim: #30D158;
+  --color-on-secondary: #0A0A0B;
+  --color-on-secondary-container: #4ADE80;
+
+  --color-tertiary: #FF9F0A;
+  --color-tertiary-container: #332211;
+  --color-tertiary-fixed: #FDE68A;
+  --color-tertiary-fixed-dim: #FF9F0A;
+  --color-on-tertiary: #0A0A0B;
+  --color-on-tertiary-container: #FBBF24;
+
+  --color-error: #FF453A;
+  --color-error-container: #3D1414;
+  --color-on-error: #FFFFFF;
+  --color-on-error-container: #F87171;
+
+  --color-on-surface: #E0E0E0;
+  --color-on-surface-variant: #A1A1AA;
+  --color-outline: #71717A;
+  --color-outline-variant: #222225;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #0A0A0B;
+    color: #E0E0E0;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Bold Typography design system helper classes */
+.font-headline-lg {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.font-headline-md {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+.font-headline-sm {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 34px;
+  line-height: 38px;
+  letter-spacing: -0.035em;
+  font-weight: 900;
+}
+
+.font-mono-lg {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.font-mono-md {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.font-mono-sm {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.font-badge-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.font-body-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.font-body-md {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.font-body-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

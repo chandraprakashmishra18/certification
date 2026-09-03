@@ -1,0 +1,6 @@
+{
+  "name": "IDENTI-SHIELD AI Screening Platform",
+  "description": "AI-assisted border immigration screening command center and explainable risk analysis platform with human-in-the-loop verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
